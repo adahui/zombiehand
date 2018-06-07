@@ -22,3 +22,5 @@ Materials needed:
 - Hand crawler servo motor black ground wire + male-male black jumper cable to Arduino Uno digital input ground GND
 
 3. The code was uploaded onto the Arduino Uno board.
+
+* Note: I was too cheap and lazy to purchase and install an Arduino WiFi Shield in order to enable cordless function. I would highly recommend using the component for remote control to maximize the element of surprise when scaring someone.
