@@ -1,0 +1,35 @@
+/* Zombie Hand
+
+Makes the servo hand crawler move forward.
+
+*/
+
+#include <Servo.h>
+
+int servoPin = 7; // pin for the servo motor
+
+Servo myservo;    // create servo object to control a servo
+                  // twelve servo objects can be created on most boards
+int pos = 0;      // variable to store the servo position
+int val;          // variable to read the value from the analog pin
+
+void setup() {
+  myservo.attach(servoPin);                 // attaches the servo on pin servoPin to the servo object
+}
+
+void loop() {
+  for (pos = 80; pos <= 135; pos += 1) {    // goes from 80 degrees to 135 degrees in steps of 1 degree
+    myservo.write(pos);                     // tells servo to go to position in variable 'pos'
+    delay(5);                               // waits 15 ms for the servo to reach the position
+  }
+
+  for (pos = 135; pos >= 80; pos -= 1) {    // goes from 135 degrees to 80 degrees in steps of 1 degree
+    myservo.write(pos);                     // tells servo to go to position in variable 'pos'
+    delay(5);                               // waits 15 ms for the servo to reach the position
+   }
+
+  for (pos = 80; pos >= 15; pos -= 1) {     // goes from 80 degrees to 15 degrees in steps of 1 degree
+    myservo.write(pos);                     // tells servo to go to position in variable 'pos'
+    delay(5);                               // waits 15 ms for the servo to reach the position
+  }
+}
