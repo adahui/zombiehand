@@ -23,4 +23,4 @@ Materials needed:
 
 3. The code was uploaded onto the Arduino Uno board.
 
-* Note: I was too cheap and lazy to purchase and install an Arduino WiFi Shield in order to enable cordless function. I would highly recommend using the component for remote control to maximize the element of surprise when scaring someone.
+[*] Note: I was too cheap and lazy to purchase and install an Arduino WiFi Shield in order to enable cordless function. I would highly recommend using the component for remote control to maximize the element of surprise when scaring someone.
